@@ -7,11 +7,13 @@ provisioner:
 
 platforms:
   - name: ubuntu-14.04
-  - name: ubuntu-12.04
 
 suites:
   - name: default
     run_list:
-      - recipe[apt::default]
-      - recipe[unattended_upgrades::default]
+      - recipe[unattended_upgrades_test::default]
     attributes:
+      unattended_upgrades:
+        override:
+          verbose_level: 2
+          random_sleep: 1
