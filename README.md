@@ -1,12 +1,12 @@
 # unattended_upgrades
 
-Installs the unattended_upgrades package, e.g the one available at [Ubuntu] https://help.ubuntu.com/community/AutomaticSecurityUpdates "Ubuntu".
+Installs the unattended_upgrades package, e.g the one available at [Ubuntu](https://help.ubuntu.com/community/AutomaticSecurityUpdates).
 
 ## Requirements
 
 This cookbook has been tested on the following platform:
 
-  - [Ubuntu 14.04] http://releases.ubuntu.com/14.04/ "Ubuntu 14.04"
+  - [Ubuntu 14.04](http://releases.ubuntu.com/14.04/)
 
 ## Attributes
 
@@ -98,6 +98,12 @@ This functionality will only work if there is an element in the stack that
 ## Usage
 
 Add the recipe to a `run_list`.
+
+## Testing
+
+```
+kitchen test;
+```
 
 ## License & Authors
 
